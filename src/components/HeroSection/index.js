@@ -209,7 +209,7 @@ export default function Hero() {
         <HeroInnerContainer>
           <HeroLeftContainer>
             <Title>
-              Hi, I am <br />
+              Hi, my name is <br />
               {Bio.name}
             </Title>
             <TextLoop>
