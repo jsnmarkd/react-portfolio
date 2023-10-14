@@ -161,7 +161,7 @@ export default function Navbar() {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "white",
+              color: theme.primary,
               marginBottom: "20",
               cursor: "pointer",
             }}
