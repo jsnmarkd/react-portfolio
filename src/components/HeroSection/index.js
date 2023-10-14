@@ -9,7 +9,7 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80 30px;
+  padding: 80px 30px;
   @media screen and (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -19,6 +19,7 @@ const HeroContainer = styled.div`
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
+
 
 const HeroBg = styled.div`
   position: absolute;
@@ -226,7 +227,7 @@ export default function Hero() {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="_blank">
-              Download CV
+              Check out my Resume
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
