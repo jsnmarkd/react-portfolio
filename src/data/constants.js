@@ -1,6 +1,6 @@
 export const Bio = {
   name: "Jason Divinagracia",
-  roles: ["Full Stack Developer", "Independent DJ"],
+  roles: ["Full Stack Developer",],
   description:
     "I'm a dedicated and adaptable person who's constantly seeking new opportunities. I have a strong enthusiasm for acquiring knowledge and am committed to producing excellent outcomes. My optimistic outlook and willingness to embrace growth enable me to make a valuable impact and accomplish significant achievements.",
   github: "https://github.com/jsnmarkd/",
