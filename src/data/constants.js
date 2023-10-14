@@ -1,6 +1,6 @@
 export const Bio = {
   name: "Jason Divinagracia",
-  roles: ["Full Stack Developer",],
+  roles: ["Full Stack Developer"],
   description:
     "I'm a dedicated and adaptable person who's constantly seeking new opportunities. I have a strong enthusiasm for acquiring knowledge and am committed to producing excellent outcomes. My optimistic outlook and willingness to embrace growth enable me to make a valuable impact and accomplish significant achievements.",
   github: "https://github.com/jsnmarkd/",
@@ -169,11 +169,28 @@ export const experiences = [
   {
     id: 0,
     img: "",
-    role: "",
-    company: "",
-    date: "",
-    desc: "",
-    skills: [],
+    role: "Team Lead, Traffic Control",
+    company: "Roxboro Excavation inc.",
+    date: "June 2021 - August 2023",
+    desc: "In charge of all computer related projects, which includes work management using Asana, and manufacturing processes with SignLab",
+    skills: [
+      "Asana",
+      "SignLab",
+      "Team Leader",
+      "Positive Attitude",
+      "Punctual",
+      "Professional",
+    ],
+    doc: "",
+  },
+  {
+    id: 1,
+    img: "",
+    role: "Independent DJ",
+    company: "DJ Sixmonths",
+    date: "April 2016 - Present",
+    desc: "Organizing and performing at events such as events, corporate events, parties, and festivals.",
+    skills: ["Serato", "Traktor", "Rekordbox", "Music Production", "Event Planning"],
     doc: "",
   },
 ];
