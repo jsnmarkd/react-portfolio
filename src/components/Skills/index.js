@@ -11,18 +11,22 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  max-width: 1100px;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   width: 100%;
+  max-width: 1100px;
   gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 const Title = styled.div`
   font-size: 42px;
+  text-align: center;
   font-weight: 600;
   margin-top: 20px;
   color: ${({ theme }) => theme.primary};
@@ -34,7 +38,7 @@ const Title = styled.div`
 `;
 
 const Description = styled.div`
-  font-size: 20px;
+  font-size: 18px;
   max-width: 600px;
   text-align: center;
   color: ${({ theme }) => theme.text_secondary};
@@ -53,10 +57,11 @@ const SkillsContainer = styled.div`
 `;
 
 const Skill = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 500px;
   background-color: ${({ theme }) => theme.card};
   border: 0.1px solid ${({ theme }) => theme.primary};
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
 
@@ -77,7 +82,41 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
   text-align: center;
-`
+`;
+
+const SkillList = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+`;
+
+const SkillItem = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 80};
+  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+`;
+
+const SkillImage = styled.img`
+  width: 24px;
+  height: 24px;
+`;
 
 export default function Skills() {
   return (
@@ -93,16 +132,16 @@ export default function Skills() {
             return (
               <Skill>
                 <SkillTitle>{item.title}</SkillTitle>
-                {/* <SkillList>
+                <SkillList>
                   {item.skills.map((skill) => {
                     return (
                       <SkillItem>
-                        <SkillImage src={skill.icon} />
+                        <SkillImage src={skill.image} />
                         {skill.name}
                       </SkillItem>
                     );
                   })}
-                </SkillList> */}
+                </SkillList>
               </Skill>
             );
           })}
