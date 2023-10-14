@@ -1,9 +1,15 @@
-import React from "react";
+import styled from "styled-components";
 
 export default function Hero() {
   return (
-    <div>
-      <h1>Hero</h1>
+    <div id="about">
+      <HeroContainer>
+        <HeroBg></HeroBg>
+        <HeroInnerContainer>
+          <HeroLeftContainer></HeroLeftContainer>
+          <HeroRightContainer></HeroRightContainer>
+        </HeroInnerContainer>
+      </HeroContainer>
     </div>
   );
 }
