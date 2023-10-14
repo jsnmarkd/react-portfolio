@@ -44,7 +44,7 @@ const NavLogo = styled(LinkR)`
 
 const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
@@ -63,7 +63,7 @@ const NavItems = styled.ul`
   align-items: center;
   gap: 32px;
   list-style: none;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -86,7 +86,7 @@ const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   padding: 0 6px;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -108,7 +108,7 @@ const GithubButton = styled.button`
     background-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
   }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
 `;
@@ -138,14 +138,18 @@ const MobileMenu = styled.div`
   z-index: ${({ open }) => (open ? "1" : "-1")};
 `;
 
-const MobileMenuLinks = styled(LinkR)`
+const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
-  text-decoration: none;
   transition: all 0.2s ease-in-out;
-  &:hover {
+  text-decoration: none;
+  :hover {
     color: ${({ theme }) => theme.primary};
+  }
+
+  &.active {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 `;
 
@@ -189,38 +193,46 @@ export default function Navbar() {
       </NavContainer>
       {open && (
         <MobileMenu open={open}>
-          <MobileMenuLinks
-            href={"#about"}
+          <MobileLink
+            href="#about"
             onClick={() => {
               setOpen(!open);
             }}
           >
             About
-          </MobileMenuLinks>
-          <MobileMenuLinks
-            href={"#skills"}
+          </MobileLink>
+          <MobileLink
+            href="#skills"
             onClick={() => {
               setOpen(!open);
             }}
           >
             Skills
-          </MobileMenuLinks>
-          <MobileMenuLinks
-            href={"#projects"}
+          </MobileLink>
+          <MobileLink
+            href="#experience"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          >
+            Experience
+          </MobileLink>
+          <MobileLink
+            href="#projects"
             onClick={() => {
               setOpen(!open);
             }}
           >
             Projects
-          </MobileMenuLinks>
-          <MobileMenuLinks
-            href={"#education"}
+          </MobileLink>
+          <MobileLink
+            href="#education"
             onClick={() => {
               setOpen(!open);
             }}
           >
             Education
-          </MobileMenuLinks>
+          </MobileLink>
           <GithubButton
             style={{
               padding: "10px 16px",
