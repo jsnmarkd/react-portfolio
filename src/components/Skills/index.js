@@ -31,7 +31,7 @@ const Title = styled.div`
     margin-top: 12px;
     font-size: 32px;
   }
-`
+`;
 
 const Description = styled.div`
   font-size: 20px;
@@ -41,6 +41,42 @@ const Description = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 16px;
   }
+`;
+
+const SkillsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 30px;
+`;
+
+const Skill = styled.div`
+  width: 300px;
+  height: 300px;
+  background-color: ${({ theme }) => theme.card};
+  border: 0.1px solid ${({ theme }) => theme.primary};
+  border-radius: 16px;
+  padding: 18px 36px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+    padding: 10px 36px;
+  }
+
+  @media screen and (max-width: 500px) {
+    max-width: 330px;
+    padding: 10px 36px;
+  }
+`;
+
+const SkillTitle = styled.h2`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 20px;
+  text-align: center;
 `
 
 export default function Skills() {
@@ -52,12 +88,12 @@ export default function Skills() {
           Here are some of my skills on which I have been working on for the
           past year.
         </Description>
-        {/* <SkillsContainer>
+        <SkillsContainer>
           {skills.map((item) => {
             return (
               <Skill>
                 <SkillTitle>{item.title}</SkillTitle>
-                <SkillList>
+                {/* <SkillList>
                   {item.skills.map((skill) => {
                     return (
                       <SkillItem>
@@ -66,11 +102,11 @@ export default function Skills() {
                       </SkillItem>
                     );
                   })}
-                </SkillList>
+                </SkillList> */}
               </Skill>
             );
           })}
-        </SkillsContainer> */}
+        </SkillsContainer>
       </Wrapper>
     </Container>
   );
