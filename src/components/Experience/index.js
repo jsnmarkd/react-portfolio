@@ -15,7 +15,10 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 50px 0px;
+  padding: 40px 0px 80px 0px;
+  @media (max-width: 960px) {
+    padding: 0px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -25,7 +28,8 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1350px;
+  padding: 80px 0;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -71,14 +75,14 @@ export default function Experience() {
     <Container id={"experience"}>
       <Wrapper>
         <Title>Experience</Title>
-        <Description>Description</Description>
+        <Description>My Work Experience</Description>
         <TimeLineSection>
           <Timeline>
             {experiences.map((experience, index) => (
               <TimelineItem>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="grey" />
-                  {index !== experiences.length - 1 && (
+                  {index !== experiences.length && (
                     <TimelineConnector style={{ background: "#FFD935" }} />
                   )}
                 </TimelineSeparator>

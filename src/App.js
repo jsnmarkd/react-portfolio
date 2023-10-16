@@ -42,7 +42,9 @@ function App() {
             <Experience />
           </Wrapper>
           <Projects />
-          <Education />
+          <Wrapper>
+            <Education />
+          </Wrapper>
         </Body>
       </Router>
     </ThemeProvider>
