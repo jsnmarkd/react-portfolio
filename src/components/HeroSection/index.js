@@ -120,7 +120,7 @@ const TextLoop = styled.div`
     text-align: center;
   }
   @media screen and (max-width: 640px) {
-    fint-size: 22px;
+    font-size: 22px;
     line-height: 48px;
     margin-bottom: 16px;
   }

@@ -39,11 +39,11 @@ const Title = styled.div`
 
 const Description = styled.div`
   font-size: 18px;
-  max-width: 600px;
+  max-width: 500px;
   text-align: center;
   color: ${({ theme }) => theme.text_secondary};
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
