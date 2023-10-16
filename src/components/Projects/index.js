@@ -56,7 +56,7 @@ const ToggleGroup = styled.div`
   font-size: 16px;
   border-radius: 12px;
   font-weight: 500;
-  margin-top: 22px 0;
+  margin-top: 22px 0px;
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -64,20 +64,25 @@ const ToggleGroup = styled.div`
 
 const ToggleButton = styled.div`
   padding: 8px 18px;
-  cursor: pointer;
   border-radius: 6px;
+  cursor: pointer;
   ${({ active, theme }) =>
     active &&
     `
-      background-color: ${theme.primary + 20}; 
-      &:hover {background-color: ${theme.primary + 8};}
-      @media screen and (max-width: 768px) { padding: 6px 8px; border-radius: 4px;}
+    background: ${theme.primary + 20};
     `}
+  &:hover {
+    background: ${({ theme }) => theme.primary + 8};
+  }
+  @media screen (max-width: 768px) {
+    padding: 6px 8px;
+    border-radius: 4px;
+  }
 `;
 
 const Divider = styled.div`
   width: 1.5px;
-  background-color: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.primary};
 `;
 
 const CardContainer = styled.div`
