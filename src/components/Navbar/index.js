@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { Bio } from "../../data/constants";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -91,25 +92,26 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const GithubButton = styled.button`
-  background-color: transparent;
-  color: ${({ theme }) => theme.primary};
+const GithubButton = styled.a`
   border: 1.8px solid ${({ theme }) => theme.primary};
-  border-radius: 20px;
-  display: flex;
   justify-content: center;
+  display: flex;
   align-items: center;
-  padding: 0px 20px;
-  font-size: 1rem;
-  font weight: 500;
-  cursor: pointer;
   height: 70%;
+  border-radius: 20px;
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
   :hover {
-    background-color: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
   }
   @media screen and (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 14px;
   }
 `;
 
@@ -188,7 +190,7 @@ export default function Navbar() {
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Github Profile</GithubButton>
+          <GithubButton href={Bio.github} target="_blank">Github Profile</GithubButton>
         </ButtonContainer>
       </NavContainer>
       {open && (
