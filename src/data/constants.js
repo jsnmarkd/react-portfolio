@@ -239,7 +239,7 @@ export const projects = [
     description:
       "A social media app dedicated to helping pet owners grieve the loss of their beloved dogs by providing a supportive and compassionate community of individuals who understand the depth of the human-animal bond. The app will allow users to create a digital memorial for their pets, share memories, and connect with other pet owners who have gone through similar experiences.",
     image:
-      "https://raw.githubusercontent.com/jsnmarkd/furever/5e46d54dfbf8a9221bf2bc1bed92357325c1bcb1/client/public/assets/logo_furever_text.svg",
+      "https://user-images.githubusercontent.com/118557828/229015591-b3b20d1c-32a5-4195-85e0-0d2f396a27c9.gif",
     tags: [
       "Axios",
       "PostgreSQL",
