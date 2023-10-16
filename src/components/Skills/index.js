@@ -65,6 +65,11 @@ const Skill = styled.div`
   border-radius: 16px;
   padding: 18px 36px;
 
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
   @media screen and (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -103,6 +108,11 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
