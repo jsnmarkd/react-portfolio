@@ -79,7 +79,7 @@ export default function Experience() {
         <TimeLineSection>
           <Timeline>
             {experiences.map((experience, index) => (
-              <TimelineItem>
+              <TimelineItem key={experience.id}>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="grey" />
                   {index !== experiences.length && (

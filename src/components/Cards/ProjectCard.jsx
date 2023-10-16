@@ -121,7 +121,7 @@ export default function ProjectCard({ project, setOpenModal }) {
       </Details>
       <Members>
         {project.member?.map((member) => (
-          <Avatar src={member.img} />
+          <Avatar key={member.name} src={member.img} />
         ))}
       </Members>
     </Card>

@@ -162,8 +162,8 @@ export default function Navbar() {
   return (
     <Nav>
       <NavContainer>
-        <NavLogo to="/">
-          <a
+        <NavLogo>
+          <span href="/"
             style={{
               display: "flex",
               alignItems: "center",
@@ -173,7 +173,7 @@ export default function Navbar() {
             }}
           >
             <DiCssdeck size={"3rem"} /> <Span>Portfolio</Span>
-          </a>
+          </span>
         </NavLogo>
         <MobileIcon>
           <FaBars
