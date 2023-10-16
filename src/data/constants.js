@@ -252,7 +252,7 @@ export const projects = [
       "Express Js",
       "cloudinary",
     ],
-    category: "web app",
+    category: "group",
     github: "https://github.com/jsnmarkd/furever",
     webapp: "",
     member: [
@@ -285,7 +285,7 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/jsnmarkd/jungle/master/docs/logo.png",
     tags: ["Rails", "Bootstrap", "Stripe", "PostgreSQL", "Rspec"],
-    category: "web app",
+    category: "personal",
     github: "https://github.com/jsnmarkd/jungle",
     webapp: "",
   },
@@ -306,7 +306,7 @@ export const projects = [
       "Jest",
       "Cypress",
     ],
-    category: "web app",
+    category: "personal",
     github: "https://github.com/jsnmarkd/scheduler",
     webapp: "",
   },

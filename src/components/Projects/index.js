@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
+import ProjectCard from "../Cards/ProjectCard";
+import { projects } from "../../data/constants";
 
 const Container = styled.div`
   display: flex;
@@ -78,6 +80,14 @@ const Divider = styled.div`
   background-color: ${({ theme }) => theme.primary};
 `;
 
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+`;
+
 export default function Projects() {
   const [toggle, setToggle] = useState("all");
   return (
@@ -92,14 +102,45 @@ export default function Projects() {
               ALL
             </ToggleButton>
           ) : (
-            <ToggleButton value="all">ALL</ToggleButton>
+            <ToggleButton value="all" onClick={() => setToggle("all")}>
+              ALL
+            </ToggleButton>
           )}
 
           <Divider />
-          <ToggleButton>GROUP</ToggleButton>
+          {toggle === "group" ? (
+            <ToggleButton active value="group">
+              GROUP
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="group" onClick={() => setToggle("group")}>
+              GROUP
+            </ToggleButton>
+          )}
           <Divider />
-          <ToggleButton>PERSONAL</ToggleButton>
+          {toggle === "personal" ? (
+            <ToggleButton active value="personal">
+              PERSONAL
+            </ToggleButton>
+          ) : (
+            <ToggleButton
+              value="personal"
+              onClick={() => setToggle("personal")}
+            >
+              PERSONAL
+            </ToggleButton>
+          )}
         </ToggleGroup>
+
+        <CardContainer>
+          {toggle === "all" &&
+            projects.map((project) => <ProjectCard project={project} />)}
+          {projects
+            .filter((item) => item.category === toggle)
+            .map((project) => (
+              <ProjectCard project={project} />
+            ))}
+        </CardContainer>
       </Wrapper>
     </Container>
   );
