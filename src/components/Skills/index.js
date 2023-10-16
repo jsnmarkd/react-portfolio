@@ -140,12 +140,12 @@ export default function Skills() {
         <SkillsContainer>
           {skills.map((item) => {
             return (
-              <Skill>
+              <Skill key={item.title}>
                 <SkillTitle>{item.title}</SkillTitle>
                 <SkillList>
                   {item.skills.map((skill) => {
                     return (
-                      <SkillItem>
+                      <SkillItem key={skill.name}>
                         <SkillImage src={skill.image} />
                         {skill.name}
                       </SkillItem>

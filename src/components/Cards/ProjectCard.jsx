@@ -105,9 +105,9 @@ const Avatar = styled.img`
   border: 2px solid ${({ theme }) => theme.card};
 `;
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, setOpenModal }) {
   return (
-    <Card>
+    <Card onClick={() => setOpenModal({ state: true, project: project })}>
       <Image src={project.image} />
       <Tags>
         {project.tags.map((tag) => (
@@ -121,7 +121,7 @@ export default function ProjectCard({ project }) {
       </Details>
       <Members>
         {project.member?.map((member) => (
-          <Avatar src={member.img}/>
+          <Avatar src={member.img} />
         ))}
       </Members>
     </Card>
