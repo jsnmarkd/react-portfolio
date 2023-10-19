@@ -10,13 +10,17 @@
 </h4>
 
 <p align="center">
+  • <a href="#deployed">Deployed</a> •
   • <a href="#image">Images</a> •
   <a href="#setup">Setup</a> •
   <a href="#dependencies">Dependencies</a> •
 </p>
 
+## Deployed
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5912de9d-b039-4c59-b96a-80a916856adc/deploy-status)](https://app.netlify.com/sites/jason-divinagracia/deploys)
+[Link to my Website](https://jason-divinagracia.netlify.app/)
 ## Images
-
+<img src="src/images/Screenshot-readme.png" alt="screenshot"/>
 
 ## Setup
 
