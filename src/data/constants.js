@@ -172,7 +172,7 @@ export const experiences = [
     role: "Team Lead, Traffic Control",
     company: "Roxboro Excavation inc.",
     date: "June 2021 - August 2023",
-    desc: "In charge of all computer related projects, which includes work management using Asana, and manufacturing processes with SignLab",
+    desc: "Managing all computer related projects, which includes work management using Asana, and manufacturing processes with SignLab",
     skills: [
       "Asana",
       "SignLab",
@@ -189,7 +189,7 @@ export const experiences = [
     role: "Independent DJ",
     company: "DJ Sixmonths",
     date: "April 2016 - Present",
-    desc: "Organizing and performing at events such as events, corporate events, parties, and festivals.",
+    desc: "Organizing and performing at events such as club events, corporate events, parties, bars, and festivals.",
     skills: [
       "Serato",
       "Traktor",
@@ -313,7 +313,7 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2022, text: "Started my journey" },
-  { year: 2023, text: "Graduated from LHL Bootcamp" },
+  { year: 2022, text: "Started my journey to learn how to code" },
+  { year: 2023, text: "Graduated from LHL Bootcamp in Web Development" },
   { year: 2023, text: "Enroll in Bruno Simon's threejs-journey" },
 ];
