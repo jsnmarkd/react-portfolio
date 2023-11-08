@@ -5,7 +5,7 @@ export const Bio = {
     "I'm a dedicated and adaptable person who's constantly seeking new opportunities. I have a strong enthusiasm for acquiring knowledge and am committed to producing excellent outcomes. My optimistic outlook and willingness to embrace growth enable me to make a valuable impact and accomplish significant achievements.",
   github: "https://github.com/jsnmarkd/",
   resume:
-    "https://drive.google.com/file/d/1Lb8G6wSe586BX3g-u8NyBrE95tntWJiG/view?usp=sharing",
+    "https://drive.google.com/file/d/1jOANqTyzb2a2SGWjSIjYizWqyMEXXeWv/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/j-divinagracia/",
   insta: "https://www.instagram.com/jasondjsix/",
 };
