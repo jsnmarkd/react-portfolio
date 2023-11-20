@@ -320,6 +320,28 @@ export const projects = [
     github: "https://github.com/jsnmarkd/scheduler",
     webapp: "",
   },
+  {
+    id: 3,
+    title: "Marble Race",
+    date: "November 2023",
+    description:
+      "A mini-game made with React Three Fiber and Three JS. The goal is to get the marble to the finish line as fast as possible.",
+    image:
+      "https://github.com/jsnmarkd/r3f-minigame/blob/main/public/Screenshot-minigame-readme.png?raw=true",
+    tags: [
+      "React Three Fiber",
+      "React Three Drei",
+      "React Three Rapier",
+      "React JS",
+      "r3f-perf",
+      "Three JS",
+      "Zustand",
+      "Vite",
+    ],
+    category: "personal",
+    github: "https://github.com/jsnmarkd/r3f-minigame",
+    webapp: "https://jd-marble-race.netlify.app/",
+  },
 ];
 
 export const TimeLineData = [
