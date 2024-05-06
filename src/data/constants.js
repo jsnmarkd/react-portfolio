@@ -89,7 +89,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://media.licdn.com/dms/image/D5612AQHOQNKTKJHBSQ/article-cover_image-shrink_720_1280/0/1699354076403?e=1720656000&v=beta&t=oXiZa4z-7o1jLQr1e8B9ME9C7ux8k5TFNZVM9jcT-SM",
       },
       {
         name: "GitHub",
@@ -114,7 +114,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://www.google.com/search?q=postman&sca_esv=be445f0cc062ab15&sxsrf=ADLYWIKy2F8TcfbvUUP0MWdFBPnWmHydbw:1715023847765&tbm=isch&source=iu&ictx=1&vet=1&fir=R3abY8DqeE5lsM%252Cv_eo2Z5_x-JPsM%252C_%253BB5quB6cU3THSuM%252CotQ_WBsnPOK7SM%252C_%253BfslJKZSJ0_BxmM%252CDeaWMDdKZSXIuM%252C_%253B5JyNaoC3f7eX9M%252CzMrze_P32ZQU0M%252C_%253Bz-yK7Zm2wvEfRM%252CsBuuigfs4hH6bM%252C_%253BqdZ_Rc9lf8dnMM%252CvUIcsV7SXkWgZM%252C_&usg=AI4_-kSZrS0QXEevm5vY7H4ll_ObyqrPyg&sa=X&sqi=2&ved=2ahUKEwifqejZ4fmFAxXYEVkFHWksDdkQ_h16BAhTEAE#imgrc=5JyNaoC3f7eX9M",
       },
       {
         name: "Three Js",
@@ -124,7 +124,7 @@ export const skills = [
       {
         name: "Figma",
         image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABzCAMAAACcnc3UAAABDlBMVEX///+iWf//cWHzTh4KzoIavP3yTBj5ZUv///0Ay3j50MzkUFmaWv+cSv4A1Hn2yLv9ZlKWYvS57dTzPQDeyPj4j4T0ThMAuf3/aVigVP//bV3zSBHN7fXw/Pj59vP14Nb0zML519P56ebxu6ryclX5WTz/YE33mYz5em3ueVzzqp/vXjPtbUr6pZfxoIz6eGXvjHf5gXX4wbjtgWrvmILuYD377eHkYGHze3f/lYPZhYTbj4rj0vK/kviH3P8Xx/9KxPbf8/bAl/SS2fSo5Pqwe/XTt/bz7PmoYvnCvfXNrfOUrPVqoPdZmv23iPl9pvWstvSvdvtrzPXXrf+V5sHV8uhP1J1v2q040Y3E7t6FJwNYAAADHklEQVRoge3YbVcSURAH8N0V9GJuEA8BCwiCiZpFz6XxqJhmZUUq+P2/SHdZxF12hg7NXO2c7v8cDy84np8ze5k7aBg6Ojo6Ojo6OgxZL1fi/qwGslEV3KCobaZm8iQRyJZTX2Ula4VUYSmY5RVrJk5ie4NNXN9JLYUSNqW6tctFPgVI0LSsRJ3H3Jtt6xzTyj3jIJ9DVaKmlWM4SWWYRE2nsU42X4CdxU0r94pKVpeWFzSdl1SzgrQWNy2rSjSREzTPJJ+i18jjnGdSH+jOPZj3UeebvzArRLO2+BlyqLdLdfE6G0TSMDYXnkP0KR9fcN7SR4LcSpBPC3qvcFzb1WVw4iImfdqOU0lBKGw6DXpnPbQAtBc0c9tMpGzvXrhUwHQSdfp9fZv421Sq8DiQFcvxMnnNJTJlRtHNu1rm/QN/PmQm2d+vHxx83I1z1jhOs2XmzTVf7PTknWK7E5XJdto9zq8Ponlq581g7LQriF4nm416yWa7fKo4tM1QxqY4ugEnap8JFccA6ZntAOmqRyyoaEGka85UOUE5yE8g6ZrFMCnRIt08AcWx2QHNLr270PnxzD5ESpR+jk7ROrsgyVBoEynTtD/DpEyPRoozzMx/Qc0irVDRmp0/U/MrRlIfqDhHzW+oSZwL92IeouZ3Vb01kCkkz+0P/AzRSOME/6x0MLNENMVPpLl2eoDMoQF5DqXR2QeOeIbW4oXKGQ8WylAmOv2k2YNI8tMcB+6uuydA3WW4PmUEiLqmvLWDapbjxvbSNMOqt4P51j6X5Fz8xJlp5/NhU77Tj7qq/JGrJtfWN1GN5q/zR/6s3ezUotgfdDvdwVFRMP9L/vJi9DCY5O0fNA6vJ8WrWCwSTCz551+j5GIWVG8OAVKxCZJqzSRIKjVLoKjWhM6PYrM0uvs6r5EyVZpYa1WaQ4RUaV79Jybe22tlJnqGIpfKzEvMHLFfmNNgMyF2oYzEm6uutVihsaFCEpt+LNs6Hqi7KjsLowo/m9MkI341NlJepZvS8GbXlK+Kl0yfmhzKAzy6Gt5BW/1RsKzr6Ojo6Ojo/Kv5DbSaa7igbwtGAAAAAElFTkSuQmCC",
       },
     ],
   },
@@ -168,6 +168,16 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://images.squarespace-cdn.com/content/v1/600b39ce29c9795190349a83/2cb40a64-5291-4c8b-b993-209418d0ab90/ATG-BLUE.png?format=1500w",
+    role: "Full Stack Developer",
+    company: "Athlete Tech Group",
+    date: "December 2023 - May 2024",
+    desc: "Led cross-functional teams as a Tech Lead, coordinating with project managers, developers, anddesigners to ensure project objectives were met, while actively contributing as a Full Stack Developer.",
+    skills: ["TypeScript", "NodeJS", "NextJS", "Jest", "PostgreSQL", "Notion", "Figma"],
+    doc: "",
+  },
+  {
+    id: 1,
     img: "",
     role: "Freelancer",
     company: "Web Developer",
@@ -194,7 +204,7 @@ export const experiences = [
     doc: "",
   },
   {
-    id: 1,
+    id: 3,
     img: "",
     role: "Independent DJ",
     company: "DJ Sixmonths",
